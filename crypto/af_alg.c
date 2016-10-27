@@ -263,6 +263,7 @@ int af_alg_accept(struct sock *sk, struct socket *newsock)
 	struct sock *sk2;
 	unsigned int nokey;
 	int err;
+	bool nokey;
 
 	lock_sock(sk);
 	type = ask->type;
